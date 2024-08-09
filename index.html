@@ -1,60 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram Photo Feed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
     <nav class="navbar navbar-light bg-light">
+      <div class="navitems-left">
         <i class="fa-brands fa-instagram fa-2x"></i>
         <a class="navbar-brand">Instagram</a>
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
-        </button>
-  
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          modal body
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+      <div class="navitems-right">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Create a new post
+          </button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+          <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <p>Caption:</p>
+          <div class="modal-body">
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2"></label>
+              <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+              <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Publish</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-        <i class="fa-solid fa-gear"></i>
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
-    </ul>
-    </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li><a class="dropdown-item" href="#">Log out</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <div class="card" style="width: 18rem;">
-        <h5 class="card-title">Card title</h5>
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+    <div class="changeview">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="grid.html" aria-label="GridView">
+              <span aria-hidden="true"><i class="fa-solid fa-table-cells"></i></span>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="index.html" aria-label="ListView">
+              <span aria-hidden="true"><i class="fa-solid fa-square"></i></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="card" style="width: 25rem;">
+      <h5 class="card-title">A cute animal photo</h5>
+      <img src="https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text"><b>1,227,912 Likes</b><br>Who doesn't love a photo of a puppy? This is a must-have when it comes to photos uploaded to any social media platform!</p>
       </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </div>
+    <div class="card" style="width: 25rem;">
+      <h5 class="card-title">Group Photo</h5>
+      <img src="https://www.stevenaitchison.co.uk/wp-content/uploads/type_of_people.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text"><b>1,523 Likes</b><br>Naturally, we have to include a group photo of our family and friends as a warm memory of the time spent together that day.</p>
+      </div>
+    </div><div class="card" style="width: 25rem;">
+      <h5 class="card-title">Eddie "The Beast" Hall</h5>
+      <img src="https://hips.hearstapps.com/hmg-prod/images/screen-shot-2020-02-01-at-13-33-54-1580564200.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text"><b>8,486 Likes</b><br>Eddie Hall is a strongman competitor and was the winner of the 2017 World's Strongest Man competition. He also broke the deadlift world record in 2016 by lifting 500 kgs (1,102 lbs)!</p>
+      </div>
+    </div><div class="card" style="width: 25rem;">
+      <h5 class="card-title">Black Hole Photo!</h5>
+      <img src="https://i.natgeofe.com/n/96ea8fe8-5dc7-4b00-ade3-653d84513dbd/01-black-hole-a-consensus.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text"><b>3,782,107 Likes</b><br>This is a real photo a a black hole! This photo is the collaberative effort by many people and telescopes from all over the world. The EHT (Event Horizon Telescope) is the name give to the global network of telescopes used to make this incredible feat possible!</p>
+      </div>
+    </div><div class="card" style="width: 25rem;">
+      <h5 class="card-title">Metal at the Olympics</h5>
+      <img src="https://www.rollingstone.com/wp-content/uploads/2024/07/gojira-olympics-QA.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text"><b>7,731,428 Likes</b><br>This is a photo of the French metal band Gojira playing at the opening ceremony of the 2024 Paris Olympics. Gojira is the first metal band to ever play at the Olympics and is a proud moment in time for metalheads!</p>
+      </div>
+    </div><div class="card" style="width: 25rem;">
+      <h5 class="card-title">In Flames we trust ;)</h5>
+      <img src="https://townsquare.media/site/366/files/2017/05/In-Flames-2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text"><b>684,379 Likes</b><br>Here is Björn Gelotte, one of the guitarists and songwriters of the Swedish Melodic Death Metal band In Flames. This is a fantastic band that blends the heavy with harmony and brilliant, melodic phrasing that the band has always been well known for utilizing.</p>
+      </div>
+    </div><div class="card" style="width: 25rem;">
+      <h5 class="card-title">Punk+Metal=Killswitch</h5>
+      <img src="https://i0.wp.com/mirth-films.com/wp-content/uploads/2022/09/Killswitch-Engage-Empire-Live-Albany-NY-9-22-2022-DICOCCO-3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text"><b>394,126 Likes</b><br>This is Massachusetts metalcore band, Killswitch Engage. Another great band that mixes different elements of music to create a new, interesting, and (of course) heavy sound. The band combines elements from the hardcore-punk genre and blends it together with elements of heavy metal music.</p>
+      </div>
+    </div><div class="card" style="width: 25rem;">
+      <h5 class="card-title">The food photo</h5>
+      <img src="https://ik.imagekit.io/smithfield/armour/4353bced-f940-00d0-8c6e-13a0a4a7f5c2/2ac60829-5178-4a6e-80cf-6ca43d862cee/Quick-and-Easy-Pepperoni-Pizza-700x700.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text"><b>18,372,491 Likes</b><br>It seems anytime you go on social media, you will inevitably find photos of delicious food. Here, is the world-renowned, yet humble pepperoni pizza. This is one thing that just never seems to get old and likely never will!</p>
+      </div>
+    </div><div class="card" style="width: 25rem;">
+      <h5 class="card-title">The Opportunity</h5>
+      <img src="https://d92mrp7hetgfk.cloudfront.net/images/sites/misc/4G_LOGO_NEGRO-01__1_/original.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text"><b>Everyone Likes</b><br>This is an image of opportunity. The opportunity to achieve something, create something. Somehow having fun in the creative aspect of coding and designing something, despite the inevitable frustration as a consequence of doing so. Anyway... this is that opportunity.</p>
+      </div>
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

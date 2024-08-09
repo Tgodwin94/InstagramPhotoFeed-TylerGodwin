@@ -2,6 +2,63 @@
     margin: 50px auto;
 }
 
-.navbar-brand {
-    float: left;
+.dropdown-menu {
+    margin: -60px;
+}
+
+#exampleModal p {
+    margin-top: 20px;
+    margin-left: 16px;
+}
+
+.form-floating button {
+    margin-top: 10px;
+}
+
+.navbar i:first-child {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.navitems-left {
+    display: flex;
+    align-items: center;
+}
+
+.navitems-right {
+    display: flex;
+    margin-right: 50px;
+}
+
+#dropdownMenuButton1 {
+    margin-left: 10px;
+}
+
+.changeview {
+    margin-left: 47%;
+    margin-top: 50px;
+}
+
+.card-title {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.card-title::after {
+    content: "8/15";
+    font-size: 10pt;
+    color: grey;
+    float: right;
+    margin-right: 5px;
+}
+
+img {
+    width:  350px;
+    height: 350px;
+    object-fit: cover;
+    
+}
+
+.row {
+    margin: 0px 25px 5px;
 }
