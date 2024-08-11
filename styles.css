@@ -2,6 +2,10 @@
     margin: 50px auto;
 }
 
+.bs-btn {
+    padding-x: 0;
+}
+
 .dropdown-menu {
     margin: -60px;
 }
@@ -15,7 +19,7 @@
     margin-top: 10px;
 }
 
-.navbar i:first-child {
+.fa-brands {
     margin-left: 20px;
     margin-right: 10px;
 }
